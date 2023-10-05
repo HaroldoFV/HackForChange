@@ -1,0 +1,37 @@
+version: '3.8'
+
+networks:
+  order_network:   # Nome da rede personalizada
+    driver: bridge  # Pode ser 'bridge', 'overlay', etc.
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: hackForChange
+    ports:
+      - "5000:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    depends_on:
+      - database
+    networks:
+      - order_network   # Conecta o serviço à rede personalizada
+
+  database:
+    image: postgres:latest
+    container_name: postgres_db
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_DB=HackForChange_db
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=1234
+    volumes:
+      - ./script.sql:/docker-entrypoint-initdb.d/script.sql
+    networks:
+      - order_network   # Conecta o serviço à rede personalizada
+
+volumes:
+  postgres_data:
