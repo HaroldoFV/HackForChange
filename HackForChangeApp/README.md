@@ -1,16 +1,20 @@
-# caminho_da_esperanca_hackaton_fiap_alura
+# Caminho da Esparança 
 
-A new Flutter project.
+## APP de agendamento de mentoria - HackForChange ALURA/FIAP
 
-## Getting Started
+APP para cadastro de agendamentos de mentoria entre alunos e profissionais
 
-This project is a starting point for a Flutter application.
+## Descrição
 
-A few resources to get you started if this is your first Flutter project:
+O Caminho da Esparança é um projeto que visa conectar alunos com outros alunos para realizar sessões de mentoria.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Em Embu-Guaçu a grande maioria dos jovens não tem esperança de conseguir mudar o padrão de vida e isso se reflete na realidade da cidade como um todo. Com o objetivo de mostrar que através da educação podemos transformar vidas, o projeto “Caminho da esperança” trás a ideia de cooperar em grupo para transformar. Nosso projeto tem como objetivo mostrar para um jovem que está tendo dificuldades na escola que ele não está sozinho e que existe pessoas que assim como ele tem dificuldades e que trabalhando juntos ambos conseguem superar essas dificuldades. 
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Links dos APKS 
+[App para o Android](HackForChange/HackForChangeApp/build/app/outputs/flutter-apk/app-debug.apk)
+
+## Como gerar um app 
+ - Flutter build apk -> Android
+ - Flutter build ios -> IOS
+
+
