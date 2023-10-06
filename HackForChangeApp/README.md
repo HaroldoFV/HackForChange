@@ -14,4 +14,5 @@ Em Embu-Guaçu a grande maioria dos jovens não tem esperança de conseguir muda
  - Flutter build apk -> Android
  - Flutter build ios -> IOS
 
+IMPORTANTE: No momento nosso aplicativo em release está dando uns problemas, baixe a versão debug por favor, iremos corrigir esses problemas em breve. 
 
